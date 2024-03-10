@@ -20,11 +20,11 @@ A mobile showroom app allows users to browse, compare, and purchase mobile devic
 
 1. Clone the repository: `git clone https://github.com/your_username/mobile-showroom-app.git`
 2. Navigate to the project directory: `cd mobile-showroom-app`
-3. Install dependencies respective folders: `npm install` or `yarn install`
+3. Install dependencies respective folders: `npm install`
 
 ## Usage
 
-1. Run the application: `npm start` or `yarn start`
+1. Run the application: `npm start`
 2. Open your browser and go to `http://localhost:3000`
 3. Explore, compare, and enjoy the virtual mobile showroom experience!
 
