@@ -1,0 +1,342 @@
+
+#root {
+  background-color: lightgray;
+}
+
+.d-navbar {
+  align-items: center;
+}
+
+.name {
+  font-size: 25px;
+  color: rgb(54, 54, 235);
+  font-weight: bold;
+  font-family: 'Inter var';
+}
+.plus-name{
+  color: rgb(54, 54, 235);
+  font-weight: bold;
+}
+
+.sub-name {
+  font-size: 12px;
+}
+
+.search-box {
+  width: 50%;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 1.575rem;
+  height: 1.575rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.search-box-dup {
+  text-align: center;
+}
+
+.menu-icons {
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login {
+  padding: 8px;
+  border-radius: 7px;
+}
+
+.login .chevron-down {
+  transition: transform 0.2s ease;
+  /* Add a smooth transition effect */
+}
+
+.login:hover {
+  background-color: #007bff;
+}
+
+.login:hover .chevron-down {
+  transform: rotate(180deg);
+  /* Rotate the div by 45 degrees on hover */
+
+}
+
+.more-vertical {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+  position: relative;
+}
+
+/* Style for the popup menu */
+.popup-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  margin-left: -130px;
+  background-color: #fff;
+  width: 15rem;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.popup-menu1 {
+  display: none;
+  margin-left: 20px;
+  z-index: 1;
+  background-color: #fff;
+  width: 15rem;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.popup-menu-item {
+  padding: 7px;
+}
+
+.popup-menu-item:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+li:hover .popup-menu1 {
+  display: block;
+}
+
+li:hover .popup-menu {
+  display: block;
+}
+
+.btns{
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .nav-icon {
+    margin-right: 8px;
+  }
+}
+
+
+/* product card css */
+
+.product-card {
+  max-width: 12em;
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 0 5px 5px #e1e1e1;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 1.0s ease-in-out;
+}
+
+.product-card:hover button {
+  color: #000;
+  background-color: #fff;
+}
+
+.card-shadow {
+  box-shadow: 0 5px 5px #e1e1e1;
+}
+
+.product-image {
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-image:hover {
+  transform: scale(1.1);
+}
+
+.footer p {
+  margin-top: 10px;
+  color: gray;
+}
+
+.footer {
+  padding-left: 10px;
+}
+
+.footer h6 {
+  cursor: pointer;
+}
+
+.offer-img {
+  height: 400px;
+  width: 80%;
+}
+
+@media screen and (max-width:686px) {
+  .offer-img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .offer-img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .product-card {
+    font-size: 0.9em;
+  }
+}
+
+/* rating and review css */
+
+
+
+.container {
+  display: flex;
+  border-radius: 15px;
+  gap: 40px;
+  height: 200px;
+
+
+  flex-direction: column; /* Change to column layout for small screens */
+  align-items: center;
+}
+.chart {
+  /* width: 500px; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+
+
+  width: 100%; /* Make the chart take full width */
+  margin-bottom: 20px; /* Add margin for spacing between chart and global section */
+
+}
+
+.chart .rate-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 30px;
+  padding: 20px 0;
+  padding: 10px;
+
+
+
+  width: 100%; /* Make rate-box take full width */
+}
+.chart .rate-box > * {
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  font-weight: 500;
+  color: #444;
+}
+.rate-box .value {
+  display: flex;
+  align-items: center;
+}
+
+.chart .value {
+  font-size: 30px;
+  cursor: pointer;
+}
+.rate-box .progress-bar {
+  border-width: 1px;
+  position: relative;
+  background-color: #cfd8dc91;
+
+  height: 10px;
+  border-radius: 100px;
+  width: 350px;
+}
+.rate-box .progress-bar .progress {
+  background-color: #66bb6a;
+  height: 100%;
+  border-radius: 100px;
+  transition: 300ms ease-in-out;
+}
+
+.global {
+  height: 100%;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.one .fas {
+  color: #cfd8dc;
+}
+
+.two {
+  background: linear-gradient(to right, #66bb6a 0%, transparent 0%);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-in-out all;
+}
+
+.global > span {
+  font-size: 90px;
+  font-weight: 500;
+}
+
+.rating-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 10%;
+
+
+  margin-top: 10px; /* Add margin to separate rating-icons from the global value */
+}
+.rating-icons span {
+  position: absolute;
+  display: flex;
+  font-size: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 5px;
+}
+
+.total-reviews {
+  font-size: 25px !important;
+}
+
+@media (min-width: 768px) {
+  /* Apply the following styles only for screens wider than 768 pixels */
+  .container {
+    flex-direction: row; /* Revert to row layout for larger screens */
+  }
+
+  .chart {
+    width: auto; /* Revert to auto width for larger screens */
+    margin-bottom: 0; /* Remove margin for larger screens */
+  }
+
+  .rate-box {
+    width: auto; /* Revert to auto width for larger screens */
+  }
+}

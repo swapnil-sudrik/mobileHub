@@ -1,0 +1,15 @@
+const productService = require('../services/productService');
+
+const getAllIphones = async (req, res) => {
+    try {
+        const iphones = await productService.getAllIphones();
+        res.json({ data: iphones });
+    } catch (error) {
+        console.error('Error fetching iPhone data:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+};
+
+module.exports = {
+    getAllIphones,
+}
