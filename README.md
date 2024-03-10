@@ -18,7 +18,7 @@ A mobile showroom app allows users to browse, compare, and purchase mobile devic
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your_username/mobile-showroom-app.git`
+1. Clone the repository: `https://github.com/swapnil-sudrik/mobileHub.git`
 2. Navigate to the project directory: `cd mobile-showroom-app`
 3. Install dependencies respective folders: `npm install`
 
