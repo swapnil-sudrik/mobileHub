@@ -5,7 +5,6 @@ A mobile showroom app allows users to browse, compare, and purchase mobile devic
 
 ## Table of Contents
 
-- [MobileHub](#mobilehub)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Installation](#installation)
